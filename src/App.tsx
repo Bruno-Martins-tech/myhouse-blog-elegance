@@ -9,6 +9,7 @@ import CategoryPage from "./pages/CategoryPage";
 import PostPage from "./pages/PostPage";
 import SearchResults from "./pages/SearchResults";
 import NotFound from "./pages/NotFound";
+import Index from "./pages/Index";
 
 const queryClient = new QueryClient();
 
@@ -19,7 +20,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<BlogHome />} />
+          <Route path="/" element={<Index />} />
           <Route path="/blog" element={<BlogHome />} />
           <Route path="/blog/busca" element={<SearchResults />} />
           <Route path="/blog/:categorySlug" element={<CategoryPage />} />
